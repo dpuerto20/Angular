@@ -1,0 +1,13 @@
+<p>Listado Gaseosas</p>
+<div>
+  <h3>Gaseosa Borrada</h3>
+  <span> {{GaseosaBorrado}}</span>
+</div>
+
+<button (click)="BorrarGaseosa()">Borrar Gaseosa</button>
+
+<ul>
+  <li *ngFor="let Gaseosa of gaseosas; let i = index">
+    {{ i + 1 }} {{ Gaseosa }}
+  </li>
+</ul>
