@@ -1,8 +1,9 @@
 <p>Listado Gaseosas</p>
-<div>
-  <h3>Gaseosa Borrada</h3>
-  <span> {{GaseosaBorrado}}</span>
+<div *ngIf="GaseosaBorrado ; else noBorrado ">
+  <h3>Gaseosa Borrada <small> {{GaseosaBorrado}}</small></h3>
+  
 </div>
+
 
 <button (click)="BorrarGaseosa()">Borrar Gaseosa</button>
 
@@ -11,3 +12,6 @@
     {{ i + 1 }} {{ Gaseosa }}
   </li>
 </ul>
+<ng-template #noBorrado> no ha borrado nada.
+</ng-template>
+
