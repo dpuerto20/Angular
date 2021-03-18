@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
-import {Campeon} from '../personajes/interface/campeon'
+import { Component, Input } from '@angular/core';
+import { Campeon } from '../personajes/interface/campeon';
+
 @Component({
   selector: 'app-main-page',
   templateUrl: './main-page.component.html',
@@ -14,19 +15,17 @@ import {Campeon} from '../personajes/interface/campeon'
       nombre: ' darius',
       poder: 600,
     },
-  ];
-
-  nuevo: Campeon = {
-    nombre: '',
-    poder: 0,
-  };
-
-  agregar() {
-    if (this.nuevo.nombre.trim().length === 0) {
-      return;
+    {
+      nombre:'teemo',
+      poder:7000,
     }
-    console.log(this.nuevo);
-    this.campeones.push({...this.nuevo});
-  }
+  ];
+nuevo :Campeon = {
+  nombre: 'victor',
+  poder: 600
+ }
+
+
+  
 
 }
