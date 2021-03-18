@@ -1,10 +1,4 @@
 
-
-
-* {
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: 200;
-  }
   
   html, body {
     
@@ -20,7 +14,7 @@
   }
   
   button {
-    background-color: black;
+    background-color: rgb(10, 12, 107);
     border-radius: 5px;
     border: 0px;
     color: white;
@@ -41,3 +35,15 @@
   .p-1 {
     padding: 1px;
   } 
+.row{
+  display: flex;
+}
+ .col{
+   flex-grow: 1;
+   margin-right: 10px;
+ }
+
+imput{
+  display: block;
+  margin: 5px;
+}

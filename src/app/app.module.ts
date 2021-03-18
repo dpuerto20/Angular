@@ -1,15 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
-import { ContadorComponent } from './contadores/contador.component';
-import { TituloComponent } from './frase-titulo/titulo.component';
-import { FraseComponent } from './frase-titulo/frase.component';
 import { HeroesModule } from './heroes/heroes.module';
+import { ContadoresModule } from './contadores/contadores.module';
+import { FraseTituloModule } from './frase-titulo/frase-titulo.module';
+import { CampeonesModule } from './campeones/campeones.module';
 
 @NgModule({
-  declarations: [AppComponent, FraseComponent, TituloComponent, ContadorComponent],
-  imports: [BrowserModule, HeroesModule], // ContadoresModule, FraseTituloModule
+  declarations: [AppComponent ],
+  imports: [BrowserModule, HeroesModule,ContadoresModule,FraseTituloModule, CampeonesModule], // ContadoresModule, FraseTituloModule
   providers: [],
   bootstrap: [AppComponent],
 })
