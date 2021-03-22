@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
 
 })
 export class AppComponent {
+  constructor() { 
+    console.log("Arranca la aplicacion")
+  }
   
   
 }

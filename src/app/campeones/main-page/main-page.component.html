@@ -2,14 +2,13 @@
 <hr />
 <div class="row">
   <div class="col">
-   <app-personajes [campeones]="campeones"> </app-personajes>
-   <app-agregar [nuevo]="nuevo" [campeones]="campeones"></app-agregar>
+    <app-personajes> </app-personajes>
+    <app-agregar></app-agregar>
   </div>
 
   <div class="col">
-   
     <hr />
   </div>
+
+  <button (click)="mostrarCampones()">Mostrar campeones</button>
 </div>
-
-
